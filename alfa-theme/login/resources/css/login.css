@@ -1,0 +1,57 @@
+body {
+margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(2deg, #010006 0%, #2a4bcb 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.email-recover-msg{
+    width: 100%;
+    padding: 10px 12px;
+    
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.email-recover{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+label {
+  display: block;
+  margin-top: 10px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  background: #4285f4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.error {
+  color: red;
+}

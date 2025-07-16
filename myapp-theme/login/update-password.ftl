@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Atualizar Senha</title>
-    <link rel="stylesheet" href="${url.resourcesPath}/css/login.css">
-</head>
-<body>
-    <div class="kcFormCard">
+<#import "template.ftl" as layout>
+<@layout.registrationLayout displayInfo=true; section>
+  <#if section = "header">
+    Recuperar Acesso
+  <#elseif section = "form">
+  <h1> LOGIN USERNAME</h1>
         <header class="kcFormHeader">
             <img src="${url.resourcesPath}/img/logo.png" alt="Logo" class="logo">
             <h1>Atualize sua senha</h1>
@@ -33,6 +30,5 @@
                 </div>
             </form>
         </div>
-    </div>
-</body>
-</html>
+  </#if>
+</@layout.registrationLayout>

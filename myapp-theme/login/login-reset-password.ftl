@@ -1,34 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Resetar Senha</title>
-    <link rel="stylesheet" href="${url.resourcesPath}/css/login.css">
-</head>
-<body>
-<#-- login-reset-password.ftl -->
 <#import "template.ftl" as layout>
-<@layout.registrationLayout displayInfo=true; section>
-  <#if section = "header">
-    Redefinir Senha
-  <#elseif section = "form">
-    <form id="kc-reset-password-form" class="form" action="${url.loginAction}" method="post">
-      <div class="form-group">
-        <label for="password">Nova senha</label>
-        <input type="password" id="password" name="password" class="form-control" autofocus required />
-      </div>
+<@layout.registrationLayout; section>
+  <#if section == "form">
+    <h1> LOGIN RESET PASSWORD</h1>
 
-      <div class="form-group">
-        <label for="password-confirm">Confirmar nova senha</label>
-        <input type="password" id="password-confirm" name="password-confirm" class="form-control" required />
-      </div>
+    <form id="kc-reset-password-form" action="${url.loginAction}" method="post">
+      <label for="password">${msg("passwordNew")}</label>
+      <input type="password" id="password" name="password" required autofocus />
 
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Salvar</button>
-      </div>
+      <label for="password-confirm">${msg("passwordConfirm")}</label>
+      <input type="password" id="password-confirm" name="password-confirm" required />
+
+      <button type="submit">${msg("doSubmit")}</button>
     </form>
   </#if>
 </@layout.registrationLayout>
-
-</body>
-</html>

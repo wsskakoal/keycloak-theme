@@ -3,6 +3,7 @@
   <#if section = "header">
     Recuperar Acesso
   <#elseif section = "form">
+  <h1> LOGIN USERNAME</h1>
     <form id="kc-reset-username-form" action="${url.loginAction}" method="post">
       <div class="form-group">
         <label for="username">Usuário ou E-mail</label>
