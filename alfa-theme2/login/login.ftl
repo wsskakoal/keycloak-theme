@@ -7,6 +7,9 @@
             ${message.summary}
         </div>
     </#if>
+        <header>
+            <h1 id="kc-page-title">Login</h1>
+        </header>    
         <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
             <div><label for="username">Usuário</label><input type="text" id="username" name="username" /></div>
             <div><label for="password">Senha</label><input type="password" id="password" name="password" /></div>

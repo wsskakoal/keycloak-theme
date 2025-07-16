@@ -71,3 +71,16 @@ input[type="submit"] {
 .register-form{
   min-width: 400px;
 }
+
+.title-card {
+  padding-top: 10px;
+  color: #414141;
+  font-size: 12px;
+}
+
+.kcFormGroup{
+  padding-top: 10px;
+  color: #414141;
+  font-size: 12px;
+  
+}
