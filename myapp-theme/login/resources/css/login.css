@@ -1,0 +1,103 @@
+/* Fundo bonito com gradiente */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(2deg, #010006 0%, #2a4bcb 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Centraliza o card e garante responsividade */
+.kcFormCard {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+/* Cabeçalho do formulário */
+.kcFormHeader {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo {
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 22px;
+    color: #333;
+    margin: 0;
+}
+
+h5 {
+    font-size: 15px;
+    color: #3333339d;
+    margin: 0;
+}
+
+/* Campos de formulário */
+.kcFormGroup {
+    margin-bottom: 18px;
+}
+
+.kcLabel {
+    display: block;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.kcInput {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.kcButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.kcButton:hover {
+    background-color: #0056b3;
+}
+
+/* Mensagem de erro */
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
